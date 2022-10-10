@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -171,9 +171,11 @@ header{
 }
 .about-img{
     max-width:100%;
-    width: 500px;
+    width: 250px;
     height: auto;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
 }
 .about-text h2{
     font-size: var(--h2-font);
@@ -181,6 +183,7 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
     font-weight: normal;
+    display: flex;
 }
 .about-text h5{
     font-size: 28px;
@@ -212,6 +215,7 @@ header{
 }
 .img1{
     border-radius: 150px;
+    display: flex ;
 }
 .services{
     background:rgb(34, 35, 27);
@@ -304,9 +308,9 @@ header{
 }
 .contact-img img{
     max-width: 100%;
-    width: 100%;
+    width:700px;
     height: auto;
-    border: radius 18px;
+    border: radius 10  px;
 }
 .contact-form h2{
     font-size: var(--h2-font);
@@ -423,6 +427,7 @@ form textarea{
          max-width: 100%;
         width: 700px;
          height: auto;
+         
     }
     .contact{
         grid-template-columns: 1fr;
@@ -438,6 +443,14 @@ form textarea{
         max-width: 100%;
         width: 760px;
         height: auto;
+    }
+   
+
+}
+@media(max-width:516px){
+    .about .about-text p{
+        padding-right: 71px;
+        display: flex;
     }
 
 }
